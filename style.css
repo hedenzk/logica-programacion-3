@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+body {
+    background-color: #faf3dd;
+    color: #4f000b;
+}
+
+header {
+    height: 170px;
+    background: linear-gradient(135deg, #720026, #ff7f51);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --mask: 
+    linear-gradient(0,#0000 30px,#000 0),
+    radial-gradient(30px,#000 calc(100% - 1px),#0000) bottom/55.5px 60px;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+}
+
+#titulo {
+    color: white;    
+    justify-content: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.contenedorPrincipal {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tarjetaFactorizar {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(206, 66, 87, 0.8);
+    width: 100%;
+    max-width: 500px;
+}
+
+.tarjetaFactorizar label {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #4f000b;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ff7f51;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #720026;
+}
+
+#botonFactorizar {
+    background-color: #720026;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#botonFactorizar:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.resultados {
+    margin-top: 2rem;
+    width: 100%
+}
+
+.resultadoItem {
+    background-color: #faf3dd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.resultadoItem h3 {
+    color: #720026;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.resultadoItem p {
+    font-size: 18px;
+}
